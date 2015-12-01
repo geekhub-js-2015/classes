@@ -19,6 +19,7 @@ tuzik.grow();
 tuzik.grow();
 
 // We can add a function later
+// Its important that I used 'function' here not '=>' because otherwise the `this` would be wrong
 Animal.prototype.growFast = function() {
     for (let i = 0; i < 10; i++) {
         this.grow();
